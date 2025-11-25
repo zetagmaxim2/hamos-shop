@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamos — Smartphones : comparez et achetez (Apple, Samsung, Google, OnePlus)</title>
+
+    <!-- Primary SEO -->
+    <meta name="description" content="Hamos — Comparez et achetez des smartphones (Apple, Samsung, Google, OnePlus). Fiches techniques, images et offres pour trouver le meilleur appareil au meilleur prix.">
+    <meta name="keywords" content="smartphone, téléphone, Apple, Samsung, Google Pixel, OnePlus, comparer, acheter, Hamos">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hamos.store">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hamos — Smartphones : comparez et achetez">
+    <meta property="og:description" content="Comparez les meilleurs smartphones (Apple, Samsung, Google, OnePlus). Fiches techniques, images et offres.">
+    <meta property="og:url" content="https://www.hamos.store">
+    <meta property="og:site_name" content="Hamos">
+    <meta property="og:image" content="https://res.cloudinary.com/dcndlhj1o/image/upload/v1764049473/image_banner_imfcjw.png">
+    <meta property="og:image:alt" content="Bannière Hamos - Smartphones">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Hamos">
+    <meta name="twitter:title" content="Hamos — Smartphones : comparez et achetez">
+    <meta name="twitter:description" content="Comparez et achetez des smartphones — Apple, Samsung, Google, OnePlus.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dcndlhj1o/image/upload/v1764049473/image_banner_imfcjw.png">
+
+    <!-- Mobile / UI -->
+    <meta name="theme-color" content="#0a74da">
+
+    <!-- Styles & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Hamos",
+      "url": "https://www.hamos.store/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.hamos.store/phones?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-images">
+            <div class="hero-left">
+                <img class="hero-left_image" src="https://res.cloudinary.com/dcndlhj1o/image/upload/v1764049473/image_banner_imfcjw.png" alt="Left phone image">
+            </div>
+            <div class="hero-right">
+                <img class="hero-right_image" src="https://res.cloudinary.com/dcndlhj1o/image/upload/c_crop,w_2000,h_800/v1764049473/lobo_bfmeeb.png" alt="Right phone image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading State -->
+    <div class="loading" id="loadingState">
+        <div class="spinner"></div>
+        <p>Chargement des appareils...</p>
+    </div>
+
+    <!-- Search and Filters Section -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Rechercher des produits par nom...">
+                </div>
+            </div>
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="apple">Apple</button>
+                <button class="filter-btn" data-filter="samsung">Samsung</button>
+                <button class="filter-btn" data-filter="google">Google</button>
+                <button class="filter-btn" data-filter="oneplus">OnePlus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img class="footer-logo" src="https://res.cloudinary.com/dcndlhj1o/image/upload/c_crop,w_2000,h_800/v1764049473/lobo_bfmeeb.png" alt="Right phone image">
+                </div>
+                <div class="footer-section">
+                    <h3>Coordonnées</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HAMOS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-product" id="modalContent">
+                <!-- Modal content will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+       
+</body>
+</html>
